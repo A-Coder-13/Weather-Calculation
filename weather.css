@@ -1,0 +1,148 @@
+ /* --- UPDATED CSS STYLES --- */
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3a8a 0%, #0c1a3b 100%);
+    /* Deep Blue Gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #e0f2f1;
+    /* Light text color */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Slightly transparent white for glass effect */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h2 {
+    color: #81d4fa;
+    /* Light Blue Accent */
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/* --- Input Styling --- */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#cityInput {
+    flex-grow: 1;
+    padding: 12px 18px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    font-size: 1.1em;
+    background-color: #1a1f33;
+    /* Darker input background */
+    color: white;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#cityInput:focus {
+    border-color: #81d4fa;
+}
+
+#fetchWeatherBtn {
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    /* Cyan Accent */
+    color: #1a1f33;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#fetchWeatherBtn:hover {
+    background-color: #0097a7;
+    transform: translateY(-1px);
+}
+
+/* --- Weather Card Styling --- */
+#weatherResult {
+    text-align: left;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: non;
+    /* Initially hidden by JS */
+}
+
+.city-name {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #ffeb3b;
+    /* Yellow Accent for City Name */
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.weather-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 400;
+    color: #b3e5fc;
+    /* Light blue for labels */
+    display: flex;
+    align-items: center;
+}
+
+.value {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+#descriptionimg img{
+    width: 30px;
+    height: 30px;
+}
+#descriptionValue{
+    text-transform: capitalize;
+}
+
+#tempValue {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #ffcc80;
+    /* Orange for temperature */
+}
+
+#message {
+    color: #ef9a9a;
+    /* Light red for errors */
+    margin-top: 20px;
+}
